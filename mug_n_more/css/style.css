@@ -1,0 +1,192 @@
+/* 1. Allgemein */
+/* Schriften */
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.jdb-font-alt {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+/* Buttons */
+.jdb-btn-round {
+    border-radius: 30px;
+}
+
+/* Innen-Abstand für Abschnitte */
+section {
+    padding: 140px 0;
+}
+
+/* Überlagerungen (Transparenz des Bildes) */
+.jdb-bg-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, .9); /* .9 = bis zum 90% Transparenz */
+    position: absolute;
+    top: 0;
+}
+
+/* Damit die Inhalts-Elemente über dem Overlay liegen */
+.row > * {
+    position: relative;
+}
+
+/* Bilder für Impressionen, damit keine Lücke zwischen den Bildern entstehen (img-fluid hat als Standard nur max-width: 100%) */
+#impressionen .img-fluid {
+    width: 100% !important;
+}
+
+/* Graustufenfilter-Effekt */
+#produkte img, 
+#impressionen img,
+#bohne img {
+    filter: grayscale(60%);
+    transition: filter .3s;
+}
+
+/* 2. Navigation */
+/* Warenkorb */
+.navbar-nav .icon-basket {
+    font-size: 1.5em;
+    line-height: 0.8;
+}
+
+#produkte img:hover,
+#impressionen img:hover,
+#bohne img:hover {
+    filter: none;
+}
+
+.navbar-nav .badge {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    padding-left: 0.5em;
+    /* No.4 befindet sich jetzt ganz neben Warenkorb */
+    padding-right: 0.5em;
+}
+
+nav.navbar {
+    transition: all .7s ease-in-out;
+}
+
+/* Hover- and active-Farbe */
+.navbar-nav button:hover,
+.navbar-nav button:active,
+.navbar-nav button:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active, /* punkt active! aufpassen! */
+a .text-white:hover,
+a.text-white:hover {
+    color: #dc3545 !important;
+}
+
+/* 3. Hero */
+.jdb-hero-bg {
+    background: url("../images/bg-hero.jpg") center top fixed no-repeat;
+    /* fixed = bleibt am Scrollen stehen */
+    background-size: cover;
+    height: 100vh;
+    /* viewport heigh */
+}
+
+#home .container {
+    height: 100%;
+}
+
+/* Text nach unten verschieben */
+#home .row {
+    height: 80%;
+}
+
+/* 4. Über uns */
+.jdb-img-bg {
+    position: absolute;
+    right: 0;
+    /* das Bild nach rechts schieben */
+    bottom: 0;
+    width: 50vw;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+    .jdb-img-bg > .img-fluid {
+        max-width: 60% !important;
+    }
+}
+
+/* 5. Bohne */
+.jdb-bohne-bg {
+    background: url("../images/bg-bohne.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#bohne .rounded-circle {
+    border: 8px solid #dc3545;
+}
+
+/* Testimonials */
+.jdb-testimonials-bg {
+    background: url("../images/bg-testimonials.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#testimonials .carousel-control-prev,
+#testimonials .carousel-control-next {
+    width: 3%;
+}
+
+#testimonials .carousel-indicators {
+    bottom: -30px;
+}
+
+/* runde Buttons-Slides im Kommentar-Panel */
+#testimonials .carousel-indicators button {
+    max-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Newsletter */
+.jdb-newsletter-bg {
+    background: url("../images/bg-newsletter.jpg") center top fixed no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* 6. Formulare */
+.input-group-lg .input-group-text {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.input-group .form-control {
+    border-radius: 20px;
+}
+
+/* 7. Footer */
+footer a {
+    text-decoration: none;
+}
+
+footer a > span {
+    font-size: 1.5rem;
+}
+
+/* Back to top button */
+#backtotopbutton {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    display: none;
+}

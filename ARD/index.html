@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARD.de</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav id="mainnav">
+        <div class="wrapper">
+            <!-- main navigation -->
+            <ul>
+                <li><a href="#" class="current">ARD Home</a></li>   <!-- Klasse "current" wird dynamisch -->
+                <li><a href="#">News</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Börse</a></li>
+                <li><a href="#">Ratgeber</a></li>
+                <li><a href="#">Wissen</a></li>
+                <li><a href="#">Kultur</a></li>
+                <li><a href="#">Kinder</a></li>
+                <li><a href="#">ARD Intern</a></li>
+            </ul>
+            <!-- end of the main navigation -->
+
+            <!-- beside navigation -->
+            <ul>
+                <li><a href="#">Fernsehen</a></li>
+                <li><a href="#">Radio</a></li>
+                <li><a href="#">ARD Mediathek</a></li>
+            </ul>
+            <!-- end of the beside navi -->
+
+            <!-- branding (hamburger button settings) -->
+            <h1 id="branding"><a href="#">ARD.de</a></h1>
+            <!-- end of the branding -->
+
+            <!-- hamburger-button-settings for mobile navi -->
+            <button id="toggle_nav">
+                <span class="icon-menu">
+
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrapper">
+             <!-- Side-headarea (Kopfbereich)-->
+            <section id="main_head">
+                <!-- logo -->
+                <div id="main_logo">
+                    <a href="index.html"><img src="images/logo_ard.png" alt="ARD Logo"></a>    <!-- always index.html or # -->
+                </div>
+                <!-- search schedule (Formular) -->
+                <form action="" method="get">
+                    <input type="search" name="search" id="search" placeholder="Suche in der ARD Mediathek">
+                </form>
+            </section>
+            <!-- News -->
+            <section class="main_content">
+                <header>
+                    <h2>Nachrichten</h2>
+                </header>
+                <!-- Column schedule -->
+                <div class="row">
+                    <div class="col">
+                        <img src="images/organ.jpg" alt="Organspende - darum geht es">
+                    </div>
+
+                    <div class="col">
+                        <p>Abstimmung im Bundestag</p>
+                        <h2>Organspende - darum geht es</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi culpa a molestiae! Quo a ad velit in architecto iure ex provident nam commodi, quis similique odit porro eos debitis itaque?</p>
+                        <p class="teaser">Berlin: Vor der Abstimmung zur Organspende | audio</p>
+                        <p class="teaser">Diskussion um Organspende: "Das muss schon Spende bleiben", 12.01.2020</p>
+                        <p class="teaser">Zahl der Organspende ging zurück, 13.01.2020</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Sport -->
+            <!-- automatisch 3 News nebeneinander einsetzen -->
+            <section class="main_content">
+                <header>
+                    <h2>Sport</h2>
+                </header>
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <img src="images/handball1.jpg" alt="Handball EM">
+                            <figcaption>Handball EM</figcaption>
+                        </figure>
+                        <p>TSG 1988 Hoffenheim im Teamcheck: Eine Hinrunde mit Licht und Schatten.</p>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <img src="images/handball2.jpg" alt="Handball EM">
+                            <figcaption>Handball EM</figcaption>
+                        </figure>
+                        <p>TSG 1988 Hoffenheim im Teamcheck: Eine Hinrunde mit Licht und Schatten.</p>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <img src="images/handball3.jpg" alt="Handball EM">
+                            <figcaption>Handball EM</figcaption>
+                        </figure>
+                        <p>TSG 1988 Hoffenheim im Teamcheck: Eine Hinrunde mit Licht und Schatten.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Service -->
+            <section class="main_content">
+                <header>
+                    <h2>Service</h2>
+                </header>
+
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <img src="images/wetter.jpg" alt="Die Wettervorhersage">
+                            <figcaption>Aussichten</figcaption>
+                        </figure>
+                        <h4>Die Wettervorhersage</h4>
+                    </div>
+
+                    <div class="col">
+                        <figure>
+                            <img src="images/dax.jpg" alt="Aktuelle Börsenkurse">
+                            <figcaption>Marktüberblick</figcaption>
+                        </figure>
+                        <h4>Aktuelle Börsenkurse</h4>
+                    </div>
+
+                    <div class="col">
+                        <figure>
+                            <img src="images/tagesschau.jpg" alt="Tagesschau in 100 Sekunden">
+                            <figcaption>Nachrichten in Kürze</figcaption>
+                        </figure>
+                        <h4>Tagesschau in 100 Sekunden</h4>
+                    </div>
+
+                    <div class="col">
+                        <figure>
+                            <img src="images/audiothek.jpg" alt="Als App im Web: die Audiothek">
+                            <figcaption>Doku, Hörspiel, Comedy - jederzeit das Beste hören</figcaption>
+                        </figure>
+                        <h4>Als App im Web: die Audiothek</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <section>
+                <div class="row">
+                    <nav class="col">
+                        <h4>Service</h4>
+                        <ul>
+                            <li><a href="#">Zuschauerredaktion Das Erste</a></li>
+                            <li><a href="#">ARD Audiothek APP</a></li>
+                            <li><a href="#">ARD Mediathek APP</a></li>
+                            <li><a href="#">Sportschau APP</a></li>
+                            <li><a href="#">Tagesschau APP</a></li>
+                            <li><a href="#">DasErste APP</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">RSS Feed</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Google+</a></li>
+                            <li><a href="#">YouTube</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </nav>    
+                    <nav class="col">
+                        <h4>ARD online</h4>
+                        <ul>
+                            <li><a href="#">ARD Startseite</a></li>
+                            <li><a href="#">Nachrichten</a></li>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Börse</a></li>
+                            <li><a href="#">Ratgeber</a></li>
+                            <li><a href="#">Wissen</a></li>
+                            <li><a href="#">Kultur</a></li>
+                            <li><a href="#">Kinder</a></li>
+                            <li><a href="#">Die ARD</a></li>
+                            <li><a href="#">Fernsehen</a></li>
+                            <li><a href="#">Radio</a></li>
+                            <li><a href="#">ARD Mediathek</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="col">
+                        <h4>Gemeinsame Programme</h4>
+                        <ul>
+                            <li><a href="#">Das Erste</a></li>
+                            <li><a href="#">ONE</a></li>
+                            <li><a href="#">Tagesschau24</a></li>
+                            <li><a href="#">3sat</a></li>
+                            <li><a href="#">arte</a></li>
+                            <li><a href="#">funk</a></li>
+                            <li><a href="#">KiKa</a></li>
+                            <li><a href="#">phoenix</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="col">
+                        <h4>Regionalsender</h4>
+                        <ul>
+                            <li><a href="#">Bayerischer Rundfunk</a></li>
+                            <li><a href="#">Hessischer Rundfunk</a></li>
+                            <li><a href="#">Mitteldeutscher Rundfunk</li>
+                            <li><a href="#">Norddeutscher Rundfunk</a></li>
+                            <li><a href="#">Radio Bremen</a></li>
+                            <li><a href="#">Rundfunk Berlin-Brandenburg</a></li>
+                            <li><a href="#">Saarländischer Rundfunk</a></li>
+                            <li><a href="#">Südwestrundfunk</a></li>
+                            <li><a href="#">Westdeutscher Rundfunk</a></li>
+                            <li><a href="#">Deutsche Welle</a></li>
+                            <li><a href="#">Deutschlandradio</a></li>
+                       </ul>
+                    </nav>                
+                </div>
+            </section>
+
+            <section>
+                <nav>
+                    <ul class="imprint">
+                        <li><a href="#">Impressum</li></a>
+                        <li><a href="#">Hilfe</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Datenschutzbestimmungen</a></li>
+                        <li><a href="#">Nutzungsbedingungen</a></li>
+                        <li><a href="#">Bildnachweise</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <p>&copy; MDR | ARD.de</p>
+                <img src="images/ard_wse.png" alt="ARD.de Logo">
+            </section>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+h1 {
+	margin: 20px 0;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #ffc107;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h2 {
+	margin: 20px 0;
+	color: #fff;
+}
+
+.row {
+	margin: 25px 0;
+}
+
+.container {
+	padding: 25px 0;
+}
+
+body {
+	background: rgb(25, 1, 68);
+}

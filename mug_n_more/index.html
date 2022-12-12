@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mug'n'more</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Wichtig ! Fonts hier anbinden ! -->
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <!-- Wichtig ! Icons hier anbinden ! -->
+  <link rel="stylesheet" href="css/simple-line-icons.css">
+
+  <!-- CDN Sources (AOS) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="50">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- fixed-top = Nav-Leiste soll sich nicht scrollen -->
+    <div class="container">
+      <!-- container-fluid wird das Nav-Panel nach links schieben -->
+      <a class="navbar-brand jdb-font-alt" href="#">
+        <img src="images/logo.svg" alt="logo mug'n'more" class="me-3 mb-3">Mug &amp; More
+        <!-- me-3 = Abstand den Text von dem Logo, mb-3 = Text in dem Column zentrieren -->
+      </a>
+      <button class="navbar-toggler jdb-btn-round" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-uppercase" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link smooth active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#ueber_uns">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#bohne">Die Bohnen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#produkte">Produkte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#impressionen">Impressionen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#kontakt">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link position-relative" href="#home">
+              <!-- Warenkorb-Icon -->
+              <span class="icon-basket"></span>
+              <!-- Warenkorb mit rotem Background einfüllen, Buttons werden mit CSS eingestellt z.B. border-radius -->
+              <span class="badge rounded-pill bg-danger">4</span> <!-- 4 bedeutet 4 Sachen im Warenkorb als Design -->
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <section id="home" class="jdb-hero-bg">
+    <div class="container">
+      <div class="row justify-content-end align-items-center">
+        <!-- nach rechts schieben und zentrieren (in dem Fall ab Linke schreiben) -->
+        <div class="col-md-5 text-white">
+          <h2 class="h1 text-danger mb-4">Hier schmeckt die Bohne</h2>
+          <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos esse doloremque aspernatur quam
+            provident, iusto impedit. Quo fugiat aliquam cumque asperiores sapiente quis quam modi obcaecati, qui, sed
+            animi omnis.</p>
+          <a href="#ueber_uns" class="btn btn-outline-danger btn-lg jdb-btn-round mt-2 mx-auto smooth">
+            <!-- Herunterladen-Icon -->
+            <span class="icon-arrow-down-circle pe-2"></span>Erlebnis starten
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Über uns -->
+  <section id="ueber_uns" class="position-relative">
+    <div class="jdb-img-bg d-none d-lg-inline">
+      <div data-aos="fade-left">
+      <img src="images/ueber-uns.jpg" alt="Das sind wir" class="img-fluid">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- h2.h1.text-danger.mb-4+(p>lorem)*4 -->
+          <h2 class="h1 text-danger mb-4">Lerne uns kennen!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perferendis rerum officiis? Placeat ducimus
+            quos voluptatum veritatis vel, odit quia? Itaque asperiores eaque reprehenderit debitis explicabo a commodi
+            corporis quo!</p>
+          <p>Quaerat in ducimus reiciendis voluptas illo eum praesentium harum culpa nemo dolorem possimus laboriosam
+            sint, blanditiis quasi animi asperiores libero at. Quo, exercitationem aperiam libero perferendis aut rem
+            praesentium rerum.</p>
+          <p>Officiis ut accusantium in aspernatur. Beatae, temporibus? Nam reiciendis, a earum sed excepturi vel minus
+            suscipit. Quia cumque delectus, soluta reprehenderit maiores, eaque quis recusandae praesentium eum, est
+            placeat! Optio?</p>
+          <p>Magnam, soluta. Pariatur reiciendis aliquid doloribus voluptas accusantium accusamus et sed? Ratione eaque
+            reprehenderit repellendus. Tempora qui perferendis officia facere ipsa nulla ut reprehenderit iure beatae a.
+            Repudiandae, nam hic.</p>
+          <p class="text-uppercase text-muted mt-4">&mdash; Mug &amp; More</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Die Bohne -->
+  <section id="bohne" class="jdb-bohne-bg position-relative">
+    <div class="jdb-bg-overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center"> <!-- row = immer flex-container -->
+        <div class="col-md-8 text-center"> <!-- col = immer flex-items -->
+          <h2 class="h1 text-danger mb-4">Ohne Bohne - kein Kaffee</h2>
+          <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error totam optio dolore aliquam. Delectus ab
+            quidem iure temporibus animi vero dolores pariatur, fugiat id ratione! Necessitatibus placeat molestias
+            commodi iste!</p>
+        </div>
+      </div>
+
+        <div class="row"> 
+          <div class="col-md text-center mx-0 mx-md-5 mb-5 mb-md-auto me-md-0 me-lg-3">
+          <div data-aos="fade-up-right">
+          <img src="images/arabica.jpg" alt="Arabica Bohne" class="img-fluid rounded-circle mb-4">
+          <h3 class="text-danger mb-3">Arabica</h3>
+          <p class="px-4 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, in. Molestiae vitae ipsa
+            laboriosam dolorem a, odio dolorum officia, explicabo porro fuga itaque minima illum quam fugiat modi dolor.
+            Recusandae.</p>
+          </div>
+        </div>
+
+        <div class="col-md text-center mx-0 mx-md-5 mb-5 mb-md-auto mx-lg-3">
+          <div data-aos="fade-up">
+          <img src="images/robusta.jpg" alt="Robusta" class="img-fluid rounded-circle mb-4">
+          <h3 class="text-danger mb-3">Robusta</h3>
+          <p class="px-4 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, in. Molestiae vitae ipsa
+            laboriosam dolorem a, odio dolorum officia, explicabo porro fuga itaque minima illum quam fugiat modi dolor.
+            Recusandae.</p>
+          </div>
+        </div>
+
+        <div class="col-md text-center mx-0 mx-md-5 mb-5 mb-md-auto ms-lg-3">
+          <div data-aos="fade-up-left">
+          <img src="images/blue-mountain.jpg" alt="Jamaica Blue Mountain Bohne" class="img-fluid rounded-circle mb-4">
+          <h3 class="text-danger mb-3">Jamaica Blue Montain</h3>
+          <p class="px-4 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, in. Molestiae vitae ipsa
+            laboriosam dolorem a, odio dolorum officia, explicabo porro fuga itaque minima illum quam fugiat modi dolor.
+            Recusandae.</p>
+          </div>
+          </div>
+          
+       </div> 
+    </div>
+  </section>
+
+  <!-- Titel -->
+  <section id="produkte">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <h2 class="h1 text-danger">Unsere besten Kaffees</h2>
+        </div>
+      </div>
+
+      <!-- Anzahl der Spalte nach Bildschirmgröße -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <div class="col">
+          <div class="card">
+            <div data-aos="fade-up">  <!-- hier kan mann nach fade-up auch Geschwindigkeit des AOS einstellen: data-aos-offset="100" -->
+            <img src="images/produkt-premium-3.jpg" alt="Premium 3" class="card-img-top">
+            
+            <div class="card-body">
+              <h3 class="card-title text-danger">
+                Premium
+                <span class="icon-star h5 pe-1"></span> <!-- Star-Icon -->
+                <span class="icon-star h5 pe-1"></span>
+                <span class="icon-star h5 pe-1"></span>
+              </h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus cum ipsam, recusandae incidunt vero error laborum praesentium? Error, quaerat vero vel dolor eum id doloribus facere saepe dolorum maxime.</p>
+              <p class="card-text lead text-danger">12,00&euro;</p>
+              </div>           
+            <div class="card-footer">
+              <button class="btn btn-outline-danger jdb-btn-round">In den Warenkorb</button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div data-aos="fade-up">
+            <img src="images/produkt-premium-2.jpg" alt="Premium 2" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-danger">
+                Premium
+                <span class="icon-star h5 pe-1"></span> <!-- Star-Icon -->
+                <span class="icon-star h5 pe-1"></span>
+              </h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus cum ipsam, recusandae incidunt vero error laborum praesentium? Error, quaerat vero vel dolor eum id doloribus facere saepe dolorum maxime.</p>
+              <p class="card-text lead text-danger">10,00&euro;</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-danger jdb-btn-round">In den Warenkorb</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div data-aos="fade-up">
+            <img src="images/produkt-premium-1.jpg" alt="Premium 1" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-danger">
+                Premium
+                <span class="icon-star h5 pe-1"></span> <!-- Star-Icon -->
+              </h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus cum ipsam, recusandae incidunt vero error laborum praesentium? Error, quaerat vero vel dolor eum id doloribus facere saepe dolorum maxime.</p>
+              <p class="card-text lead text-danger">8,99&euro;</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-danger jdb-btn-round">In den Warenkorb</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div data-aos="fade-up">
+            <img src="images/produkt-gold.jpg" alt="Gold" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-danger">
+                Gold
+              </h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus cum ipsam, recusandae incidunt vero error laborum praesentium? Error, quaerat vero vel dolor eum id doloribus facere saepe dolorum maxime.</p>
+              <p class="card-text lead text-danger">11,00&euro;</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-danger jdb-btn-round">In den Warenkorb</button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div data-aos="fade-up">
+            <img src="images/produkt-silver.jpg" alt="Silver" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-danger">
+                Silver
+              </h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus cum ipsam, recusandae incidunt vero error laborum praesentium? Error, quaerat vero vel dolor eum id doloribus facere saepe dolorum maxime.</p>
+              <p class="card-text lead text-danger">9,89&euro;</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-danger jdb-btn-round">In den Warenkorb</button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div data-aos="fade-up">
+            <img src="images/produkt-bronze.jpg" alt="Bronze" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-danger">
+                Bronze
+              </h3>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus cum ipsam, recusandae incidunt vero error laborum praesentium? Error, quaerat vero vel dolor eum id doloribus facere saepe dolorum maxime.</p>
+              <p class="card-text lead text-danger">7,89&euro;</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-outline-danger jdb-btn-round">In den Warenkorb</button>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="jdb-testimonials-bg position-relative">
+    <div class="jdb-bg-overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2 class="h1 text-danger text-center mb-5">Was denkt ihr über uns?</h2>
+
+            <!-- Slideshow (carousel from getboostrap.com)-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  
+                  <div class="row justify-content-center text-center mb-4">
+                  <div class="col">
+                    <p class="lead text-white mb-4">
+                      Danke für die gute Zeit in eurem wunderschönen Laden. Der Kaffee schmeckt super und die Bedienung war super nett. Man fühlt sich als wäre man zu Hause.
+                    </p>
+                    <p class="text-uppercase text-muted">&mdash; Cindy Kraft <em>Kaffeegourmet</em>
+                    </p>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  
+                  <div class="row justify-content-center text-center mb-4">
+                    <div class="col">
+                      <p class="lead text-white mb-4">
+                        Toller Kaffee, nettes Personal man merkt das hier viel Liebe drin steck. Ich werde bestimmt noch öfter kommen.
+                      </p>
+                      <p class="text-uppercase text-muted">&mdash; David Kraft <em>Kaffee-Entdecker</em>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  
+                  <div class="row justify-content-center text-center mb-4">
+                    <div class="col">
+                      <p class="lead text-white mb-4">
+                        Danke für die gute Zeit in eurem wunderschönen Laden. Der Kaffee schmeckt super und die Bedienung war super nett. Man fühlt sich als wäre man zu Hause.
+                      </p>
+                      <p class="text-uppercase text-muted">&mdash; Cindy Kraft <em>Kaffeegourmet</em>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+        </div>     
+    </div>
+  </section>
+
+  <!-- Impressionen -->
+  <section id="impressionen">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-12 text-center">
+          <h2 class="h1 text-danger">Impressionen</h2>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-0" data-masonry='{"percentPosition": true }'>
+        <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-01.jpg" alt="Frau trinkt Kaffee" class="img-fluid">
+            </div>  <!-- AOS -->
+          </div>
+
+          <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-03.jpg" alt="Ein Stück Torte" class="img-fluid">
+            </div><!-- AOS -->
+          </div>
+
+          <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-06.jpg" alt="Eiskaffee" class="img-fluid">
+            </div><!-- AOS -->
+          </div>
+
+          <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-02.jpg" alt="Gebäck" class="img-fluid">
+            </div><!-- AOS -->
+          </div>
+
+          <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-04.jpg" alt="Espressomaschine" class="img-fluid">
+            </div><!-- AOS -->
+          </div>
+
+          <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-05.jpg" alt="Kaffeetasse" class="img-fluid">
+            </div><!-- AOS -->
+          </div>
+
+          <div class="col">
+            <div data-aos="zoom-in-up">
+              <img src="images/gallery-07.jpg" alt="Kaffeestube" class="img-fluid">
+            </div><!-- AOS -->
+          </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter" class="jdb-newsletter-bg position-relative">
+    <div class="jdb-bg-overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 text-center">
+          <p class="lead text-white mb-5">Abonniere unseren Newsletter und erhalte immer die neuesten Informationen zu unserem schönen Café.</p>  <!-- é = alt + 0233 -->
+          <button class="btn btn-outline-danger jdb-btn-round btn-lg" data-bs-toggle="modal" data-bs-target="#newsletter_modal">Newsletter abonnieren</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Modal -->
+  <div id="newsletter_modal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header mb-4">
+          <h2 class="h1 modal-title text-danger ms-3">Newsletteranmeldung</h2>
+          <button class="btn-close me-3" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="" id="modal_form">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-lg-6 mb-4">
+                  <input type="text" placeholder="Vorname" class="form-control rounded-pill">
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                  <input type="text" placeholder="Name" class="form-control rounded-pill">
+                </div>
+
+                <div class="col-lg-12 mb-4">
+                  <input type="email" placeholder="E-Mail" class="form-control rounded-pill">
+                </div>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary jdb-btn-round" data-bs-dismiss="modal" type="reset">abbrechen</button>
+          <button class="btn btn-outline-danger jdb-btn-round" type="submit">abonnieren</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontaktformular -->
+  <section id="kontakt">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="h1 text-danger">Schön von euch zu lesen</h2>
+        </div>
+      </div>
+
+      <form action="">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group input-group-lg mb-4">
+              <textarea rows="6" class="form-control" placeholder="Ihre Nachricht"></textarea>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-group input-group-lg mb-4">
+              <span class="input-group-text bg-danger text-white icon-user"></span>
+              <input type="text" placeholder="Vollständiger Name" class="form-control">
+            </div>
+
+            <div class="input-group input-group-lg mb-4">
+              <span class="input-group-text bg-danger text-white icon-paper-plane"></span>
+              <input type="email" placeholder="Ihre Mail-Adresse" class="form-control">
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-outline-danger jdb-btn-round btn-lg">Senden</button>
+            </div>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Seiten-Footer -->
+  <footer class="bg-black">
+    <div class="container py-3">
+      <div class="row text-white justify-content-center">
+        <div class="col-md-8 text-center">
+          <a href="#" class="px-2"><span class="icon-social-facebook text-white"></span></a>
+          <a href="#" class="px-2"><span class="icon-social-pinterest text-white"></span></a>
+          <a href="#" class="px-2"><span class="icon-social-instagram text-white"></span></a>
+        </div>
+        <div class="col-md-8 text-center mt-3">
+          <p>
+            created by
+            <a href="#" class="text-white">Webdesign Monster UG</a>
+            &minus; &copy; J. Aderhold
+            <span id="jahr">
+              <time datetime="2022">2022</time>
+            </span>
+            &minus; <a href="#kontakt" class="text-white">Impressum</a>
+            &vert; <a href="#kontakt" class="text-white">Datenschutz</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+<a href="#home" id="backtotopbutton" class="btn btn-outline-danger jdb-btn-round d-inline smooth">
+  <span class="icon-arrow-up">
+    
+  </span>
+</a>
+
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Examples Masonry Plugin-->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+  <!-- JSDelivr / JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+
+  <!-- CDN Sources (AOS) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom.js -->
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>

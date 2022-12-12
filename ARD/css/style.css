@@ -1,0 +1,256 @@
+/* 1. Generely styling */
+
+/* a) Normalization of concrete elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Helvetica, Arial, Droid-sans, sans-serif;
+    font-size: 16px;    /* 1 rem */
+    color: #333;
+}
+
+body {
+    background:#7314e0 url('../images/base_xs.jpg') no-repeat top center fixed;  /* no repeat the screen-bild */
+    background-size: cover; /* Aufpassung zur Monitorgröße */
+}
+
+/* Standard-styling for the wrapper and the body on big equipments (Geräte) */
+/* centralisation the wrapper for big screen */
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: url('../images/base_xl.jpg');
+    }
+    .wrapper {
+        width: 996px;
+        margin: 0 auto;
+    }
+}
+
+/* 2. The main navi */
+#mainnav {
+    width: 100%;
+    background: rgba(66, 88, 126, .7);
+    border-bottom: 1px solid #d9fffc;
+}
+
+#mainnav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainnav ul {   /* the same like #mainnav > .wrapper > ul */
+    list-style: none;
+    margin: 20px 0px 20px 10px; /* oben rechts unten links */
+   /*  padding: 15px 0px 0px 0px; */
+   display: flex;
+}
+
+#mainnav ul:nth-child(2) {
+    font-weight: bold;
+}
+
+#mainnav ul > li {
+    margin-bottom: 15px;    /* odstep pomiedzy elementami li's */
+}
+
+#mainnav a {
+    text-decoration: none;
+    padding: 11px 5px 8px;
+    font-size: .9rem;
+}
+
+#mainnav a:link,
+#mainnav a:visited,
+#mainnav a:active {
+    color: #fff;
+}
+
+#mainnav a:hover,
+#mainnav a.current {
+    background-color: #fff;
+    color: #333;
+}
+
+@media screen and (min-width: 1024px) {
+    #mainnav ul {
+        display: flex;
+    }
+    #mainnav ul > li {
+        margin: 0;
+    }
+    #toggle_nav {
+        display: none;
+    }
+}
+
+/* Logo in main navi-area */
+#branding {
+    background: url('../images/ardlogo_weiss.png') no-repeat 0 0;
+    width: 70px;
+    height: 35px;
+    text-indent: -999999999999px;   /* przesuwanie #branding w pizdu i zastapienie go logiem */
+}
+
+/* white button in the place where was the branding ARD.de */
+#branding a {
+    display: block;
+    width: 70px;
+    height: 35px;
+    padding: 0;
+}
+
+/* clean the a:hover */
+#branding a:hover {
+    background-color: transparent;
+}
+
+#toggle_nav {
+    width: 50px;
+    height: 45px;
+    margin-left: 5px;
+}
+
+
+/* 3. Side head-area */
+#main_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_logo {
+    display: none;
+}
+
+/* search-schedule */
+#main_head form {
+    margin-top: 20px;
+}
+
+#main_head input {
+    width: 260px;
+    height: 36px;
+    padding: 3px;
+    padding-right: 35px;
+    font-size: .9rem;
+    background: #fff url('../images/lens.png') no-repeat center right; /* lupa */
+    background-size: 30px 30px;
+}
+
+/* blokowanie nachodzacych liter na lupe w wyszukiwarce */
+@media screen and (min-width: 1024px) {
+    #main_logo {
+        display: block;
+    }
+}
+
+/* The main-content-schedule (Haupt-Inhalt-Bereich) */
+.main_content {
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main_content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main_content header >  h2 {
+    font-family: 'Times New Roman', serif;
+}
+
+h4 {
+    margin: 10px 0;
+    
+}
+
+.main_content img {
+    width: 100%;
+}
+
+p {
+    margin: 15px 0;
+}
+
+p.teaser {
+    border-top: 1px solid #42587e;
+    padding: 10px 0;
+    margin: 0;
+}
+
+p.teaser:last-child {
+    border-bottom: 1px solid #42587e;
+}
+
+.row {
+    width: 100%;
+}
+
+/* 4. Footer */
+
+/* the picture left, text right and for nav class="col" -> 4 column at the end the website */
+@media screen and (min-width: 1024px) {
+    .row {
+        display: flex;
+        gap: 10px;  /* quasi margin between the pic and the txt */
+    }
+    .col {
+        width: 100%;    /* the picture extend (vergrößern), oder flex: 1; */
+    }
+}
+
+/* 5. Four column in footer */
+footer {
+    background: #001a4b;
+    margin-top: 20px;   /* odstep miedzy sekcjami strony */
+    padding: 30px 10px 12px;    /* text editing */
+}
+
+/* Typographie */
+footer h4,
+footer p,
+footer a {
+    color: #fff;
+}
+
+footer h4 {
+    margin-top: 30px;
+}
+
+/* Navi in the footer */
+footer nav ul > li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+footer a {
+    text-decoration: none;  /* usuwanie podkreslenia */
+}
+
+footer .imprint {
+    margin-top: 30px;   /* Impressum margin-top */
+}
+
+footer img {
+    width: 200px;
+    height: 30px;
+}
+
+/* Impressum nebeneinander einsetzen (keine Columns) */
+@media screen and (min-width: 1024px) {
+    footer nav ul > li {
+        margin-top: 5px;
+    }
+    footer .imprint {
+        display: flex;  /* Impressum nebeneinander */
+    }
+    footer .imprint > li {
+        margin-right: 10px;
+    }
+    /* ARD-Logo nach rechts */
+    footer section:last-child {
+        display: flex;
+        justify-content: space-between;
+    }
+}
